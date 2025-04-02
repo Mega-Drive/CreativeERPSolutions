@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<link rel="icon" href="images/icon.png" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="CreativeERPSolutions Dashboard Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-5.3.3/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/dashboard_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/dashboard_responsive.css">
+</head>
+<body>
+
+<div class="super_container d-flex flex-column align-items-center">
+    <!-- Hamburger Button -->
+    <button class="navbar-toggler d-sm-none d-sm-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="images/hamburger.svg" alt="Hamburger Icon">
+    </button>
+    <!-- Menu -->
+    <div class="menu trans_200">
+        <div class="sidebar">
+            <div class="navbar-header main_nav_logo">
+                <a href="#" class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="nav_logo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="brand_text">CreativeERPSolutions</div>
+                </a>
+            </div>
+            <div class="main_links ">
+                <ul class="d-flex flex-column">
+                    <li>
+                        <a href="#">
+                            <img src="images/dash_icon_1.svg" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/dash_icon_2.svg" alt="">
+                            <span>Plugins</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <img src="images/dash_icon_3.svg" alt="">
+                            <span>Account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/dash_icon_4.svg" alt="">
+                            <span>Rewards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/dash_icon_5.svg" alt="">
+                            <span>Billing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/dash_icon_6.svg" alt="">
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/dash_icon_7.svg" alt="">
+                            <span>Sign out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+               <div class="dashboard_container d-flex flex-column">
+                    <!-- Header -->
+                    <header class="header">
+                        <div class="main_nav_container d-flex flex-sm-row flex-column align-items-sm-center align-items-start justify-content-start">
+                            <nav class="navbar navbar-expand-md trans_200" id="main_nav">
+                                <div class="navbar-header main_nav_logo">
+                                    <a href="#" class="d-flex flex-row align-items-center justify-content-start">
+                                        <div class="nav_logo">
+                                            <img src="images/logo.svg" alt="">
+                                        </div>
+                                        <div class="brand_text">CreativeERPSolutions</div>
+                                    </a>
+                                </div>
+                            </nav>
+                            <div class="greeting"><span>Welcome,</span><span> Julien</span></div>
+                        </div>
+                    </header>
+                    <div class="dashboard_container_inner d-flex flex-sm-row flex-column">
+                        <div class="sidebar main_sidebar">
+                            <div class="main_links ">
+                                <ul class="d-flex flex-column">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/dash_icon_1.svg" alt="">
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/dash_icon_2.svg" alt="">
+                                            <span>Plugins</span>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">
+                                            <img src="images/dash_icon_3.svg" alt="">
+                                            <span>Account</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/dash_icon_4.svg" alt="">
+                                            <span>Rewards</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/dash_icon_5.svg" alt="">
+                                            <span>Billing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/dash_icon_6.svg" alt="">
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/dash_icon_7.svg" alt="">
+                                            <span>Sign out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <main class="main_content">
+                            <h3 class="main_content_title">Account</h3>
+                            <!-- Personal Information -->
+                            <section class="main_section personal_info_section d-flex flex-lg-row flex-column">
+                                <div class="section_title">
+                                    <h4>Personal information</h4>
+                                    <p>Tell us a little bit about yourself</p>
+                                </div>
+                                <div class="section_form">
+                                    <form action="#">
+                                        <div>
+                                            <label for="input_name">Full name</label>
+                                            <input type="text" placeholder="Julien Richards" class="custom_input" id="input_name">
+                                        </div>
+                                        <div>
+                                            <label for="input_country">Country</label>
+                                            <input type="text" placeholder="United States of America" class="custom_input" id="input_country">
+                                        </div>
+                                        <div>
+                                            <label for="input_occupation">Occupation</label>
+                                            <input type="text" placeholder="Student" class="custom_input" id="input_occupation">
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+
+                            <!-- Contact Information -->
+                            <section class="main_section personal_info_section d-flex flex-lg-row flex-column">
+                                <div class="section_title">
+                                    <h4>Contact information</h4>
+                                    <p>This is how we’ll contact you with bills, new offers, and receipts.</p>
+                                </div>
+                                <div class="section_form">
+                                    <form action="#">
+                                        <div>
+                                            <label for="input_email">E-mail</label>
+                                            <input type="text" placeholder="jrichards03@gmail.com" class="custom_input" id="input_email">
+                                        </div>
+                                        <div>
+                                            <label for="input_phone">Phone</label>
+                                            <input type="text" placeholder="555-828-8911" class="custom_input" id="input_phone">
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+
+                            <!-- Account Information -->
+                            <section class="main_section personal_info_section d-flex flex-lg-row flex-column">
+                                <div class="section_title">
+                                    <h4>Account information</h4>
+                                    <p>Information about your account, and any current subscriptions.</p>
+                                </div>
+                                <div class="section_info_container">
+                                    <ul>
+                                        <li class="section_info">
+                                            <span>Account type</span>
+                                            <p>PREMIUM <span>(renews May 2nd, 2025)</span></p>
+                                        </li>
+                                        <li class="section_info">
+                                            <span>Member since</span>
+                                            <p>April 2nd, 2025</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <!-- Button -->
+                            <div class="button_container d-flex flex-row justify-content-end">
+                                <button class="save_changes_button"><span>Save changes</span></button>
+                            </div>
+
+                        </main>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="styles/bootstrap-5.3.3/popper.js"></script>
+<script src="styles/bootstrap-5.3.3/bootstrap.min.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
