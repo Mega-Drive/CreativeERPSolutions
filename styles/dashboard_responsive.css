@@ -156,7 +156,7 @@
     {
         padding-left: 0;
     }
-    .greeting span
+    .greeting span, .greeting2 span
     {
         font-size: 16px;
     }
@@ -178,7 +178,7 @@
     }
     .header
     {
-        padding-bottom: 6px;
+        padding-bottom: 1px;
         padding-top: 6px;
         padding-left: 1px;
         padding-right: 3px;
@@ -205,6 +205,10 @@
     {
         width: 100%;
         margin-top: 33px;
+    }
+    .greeting2
+    {
+        width: 100%;
     }
     .main_nav_container
     {
