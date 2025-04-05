@@ -148,10 +148,6 @@
 
 @media only screen and (max-width: 1024px)
 {
-	.hero_title
-    {
-        margin-top: 102px;
-    }
     .brands
     {
         margin-top: -15px;
@@ -236,6 +232,10 @@
         font-size: 55px;
         line-height: 1.1em;
     }
+    .main_links
+    {
+        margin-top: 0;
+    }
     .hero_description
     {
         /* Enhancing your ERP-system with additional features doesn’t have to be hard or time-consuming. */
@@ -304,7 +304,7 @@
     }
     .hero_title_container
     {
-        margin-top: 126px;
+        margin-top: 23px;
     }
     .hero_title
     {
@@ -556,7 +556,7 @@
     }
     .main_links
     {
-        margin-top: 101px;
+        margin-top: 0px;
     }
     .why_choose_decoration
     {
@@ -646,10 +646,6 @@
     {
         margin-left: -3px;
     }
-    .header
-    {
-        padding-right: 15px;
-    }
     .navbar
     {
         padding-top: 0px;
@@ -658,7 +654,7 @@
     }
     .main_links
     {
-        margin-top: 83px;
+        margin-top: 23px;
     }
     .navbar.scrolled
     {
@@ -667,11 +663,11 @@
     }
     .hero_title_container
     {
-        margin-top: 70px;
+        margin-top: 0px;
     }
     .hero_title
     {
-        margin-top: 4px;
+        margin-top: -13px;
     }
     .hero_description
     {

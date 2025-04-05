@@ -5,11 +5,10 @@
 [Table of Contents]
 
 1. Vars and Inits
-2. Init Header
-3. Init Menu
-4. Init Brands Slider
-5. Init Testimonials Slider
-6. Init Accordions
+2. Init Menu
+3. Init Brands Slider
+4. Init Testimonials Slider
+5. Init Accordions
 
 
 ******************************/
@@ -27,39 +26,11 @@ $(document).ready(function()
 	initBrandsSlider();
 	initTestimonialsSlider();
 	initAccordions();
-	initHeader();
 	initMenu();
 
-	$(document).on('scroll', function()
-	{
-		initHeader();
-	});
-
 	/* 
 
-	2. Init Header
-
-	*/
-	
-	function initHeader()
-	{
-		let header = $('.header');
-		let navbar = $('.navbar');
-		if($(window).scrollTop() > 180)
-		{
-			header.addClass('scrolled');
-			navbar.addClass('scrolled');
-		}
-		else
-		{
-			header.removeClass('scrolled');
-			navbar.removeClass('scrolled');
-		}
-	}
-
-	/* 
-
-	3. Init Menu
+	2. Init Menu
 
 	*/
 
@@ -70,12 +41,13 @@ $(document).ready(function()
 		btn.on('click', function()
 		{
 			menu.toggleClass('active');
+			btn.toggleClass('active');
 		});
 	}
 
 	/* 
 
-	4. Init Brands Slider
+	3. Init Brands Slider
 
 	*/
 
@@ -134,7 +106,7 @@ $(document).ready(function()
 
 	/* 
 
-	5. Init Testimonials Slider
+	4. Init Testimonials Slider
 
 	*/
 
@@ -178,7 +150,7 @@ $(document).ready(function()
 
 	/* 
 
-	6. Init Accordions
+	5. Init Accordions
 
 	*/
 

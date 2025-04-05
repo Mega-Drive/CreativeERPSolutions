@@ -298,11 +298,9 @@ section
 
 .header
 {
-	position: fixed;
-	top: 0;
-	left: 0;
+	position: relative;
 	background-color: var(--white);
-	width: 100vw;
+	width: 100%;
 	z-index: 1000;
 }
 .header.scrolled
@@ -376,6 +374,7 @@ section
 	font-size: 18px;
 	color: var(--gray1);
 	font-weight: 400;
+	white-space: nowrap;
 }
 .nav_links ul li a:hover
 {
@@ -419,7 +418,6 @@ section
 }
 .navbar-toggler
 {
-	position: relative;
 	display: none;
 	flex-direction: row;
 	justify-content: center;
@@ -435,10 +433,36 @@ section
 
 	background: #60D186;
 	border-radius: 6px;
+	z-index: 1001;
+	border: none!important;
+	outline: none!important;
+	font-size: 1.25rem;
 }
 .navbar-toggler:hover
 {
 	background-color: var(--greenLight);
+}
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible
+{
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler .navbar-toggler-default
+{
+	display: flex;
+}
+.navbar-toggler .navbar-toggler-toggled
+{
+	display: none;
+}
+.navbar-toggler.active .navbar-toggler-default
+{
+	display: none;
+}
+.navbar-toggler.active .navbar-toggler-toggled
+{
+	display: flex;
 }
 
 /*********************************
@@ -447,21 +471,14 @@ section
 
 .menu
 {
-	position: fixed;
-	top: 0;
-	right: -100vw;
+	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 0px;
 	background-color: var(--white);
-	z-index: 1000;
-	overflow-y: auto;
-	overflow-x: hidden;
-	opacity: 0;
 }
 .menu.active
 {
-	right: 0px;
-	opacity: 1;
+	height: 331px;
 }
 .main_links
 {
@@ -553,9 +570,9 @@ section
 5. Hero Section
 *********************************/
 
-.hero_title_container
+.home_section
 {
-	margin-top: 330px;
+	background-color: var(--white);
 }
 .hero_title
 {
@@ -571,6 +588,7 @@ section
 .hero_title > span
 {
 	position: relative;
+	z-index: 0;
 }
 .hero_vector_1
 {

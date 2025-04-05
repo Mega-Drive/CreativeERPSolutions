@@ -14,12 +14,6 @@ $(document).ready(function()
 	"use strict";
 
 	initMenu();
-	initHeader();
-
-	$(document).on('scroll', function()
-	{
-		initHeader();
-	});
 
 	/* 
 
@@ -34,31 +28,7 @@ $(document).ready(function()
 		btn.on('click', function()
 		{
 			menu.toggleClass('active');
+			btn.toggleClass('active');
 		});
-	}
-
-	/* 
-
-	2. Init Header
-
-	*/
-	
-	function initHeader()
-	{
-		let header = $('.header');
-		let navbar = $('.navbar');
-		let nb = $('.sidebar .navbar-header');
-		if($(window).scrollTop() > 180)
-		{
-			header.addClass('scrolled');
-			navbar.addClass('scrolled');
-			nb.addClass('scrolled');
-		}
-		else
-		{
-			header.removeClass('scrolled');
-			navbar.removeClass('scrolled');
-			nb.removeClass('scrolled');
-		}
 	}
 });

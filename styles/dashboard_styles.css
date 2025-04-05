@@ -16,13 +16,7 @@
 1. Fonts
 ***********/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-@font-face
-{
-	font-family: 'Beyond';
-	src: url('../fonts/beyond_the_mountains.otf')  format('truetype'),
-		 url('../fonts/beyond_the_mountains.ttf')  format('opentype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*********************************
 2. Body and some general stuff
@@ -312,6 +306,9 @@ section
 {
 	max-width: 100%;
     padding-left: 14px;
+    flex-wrap: wrap;
+    padding-top: 53px;
+    padding-bottom: 40px;
 }
 /* fixer */
 .main_nav_container .container-fluid
@@ -323,10 +320,7 @@ section
 {
 	display: table;
 	position: relative;
-	width: 100%;
 	height: 40px;
-	padding-top: 61px;
-	padding-bottom: 45px;
 }
 .navbar-header
 {
@@ -420,9 +414,6 @@ section
 }
 .navbar-toggler
 {
-	position: fixed;
-	top: 15px;
-	right: 20px;
 	display: none;
 	flex-direction: row;
 	justify-content: center;
@@ -439,14 +430,39 @@ section
 	background: #60D186;
 	border-radius: 6px;
 	z-index: 1001;
+	border: none!important;
+	outline: none!important;
 }
 .navbar-toggler:hover
 {
 	background-color: var(--greenLight);
 }
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible
+{
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler .navbar-toggler-default
+{
+	display: flex;
+}
+.navbar-toggler .navbar-toggler-toggled
+{
+	display: none;
+}
+.navbar-toggler.active .navbar-toggler-default
+{
+	display: none;
+}
+.navbar-toggler.active .navbar-toggler-toggled
+{
+	display: flex;
+}
 .greeting
 {
     white-space: nowrap;
+	margin-left: auto;
 }
 .greeting span
 {
@@ -520,7 +536,7 @@ section
 }
 .main_links ul li:last-of-type
 {
-    margin-top: auto;
+    
 }
 .main_links ul li:hover, .main_links ul li.active
 {
@@ -712,21 +728,16 @@ form > div:not(:last-of-type)
 }
 .menu
 {
-	position: fixed;
-	top: 0;
-	right: -100vw;
+	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 0px;
 	background-color: var(--white);
-	opacity: 0;
-	z-index: 1000;
-	overflow-y: auto;
-	overflow-x: hidden;
+	visibility: hidden;
 }
 .menu.active
 {
-	right: 0px;
-	opacity: 1;
+	height: 400px;
+	visibility: visible;
 }
 .menu .sidebar
 {
@@ -749,8 +760,4 @@ form > div:not(:last-of-type)
 	z-index: 999;
 	margin-top: 0;
 	margin-left: 0;
-}
-.menu .main_links
-{
-	margin-top: 40px;
 }

@@ -96,10 +96,6 @@
         padding-left: 24px;
         padding-right: 24px;
     }
-    .navbar
-    {
-        padding-top: 45px;
-    }
     .main_links
     {
         padding-bottom: 50px;
@@ -182,11 +178,16 @@
     }
     .header
     {
-        position: fixed;
-        left: 0;
         padding-bottom: 6px;
-        padding-left: 20px;
+        padding-top: 6px;
+        padding-left: 1px;
+        padding-right: 3px;
         z-index: 999;
+    }
+    .navbar-header
+    {
+        margin-top: 0;
+        margin-left: 0;
     }
     .sidebar .navbar-header.scrolled
     {
@@ -198,7 +199,17 @@
     }
     .navbar
     {
-        padding-top: 14px;
+        width: 100%;
+    }
+    .greeting
+    {
+        width: 100%;
+        margin-top: 33px;
+    }
+    .main_nav_container
+    {
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .main_sidebar
     {
@@ -206,7 +217,7 @@
     }
     .menu .main_links
     {
-        margin-top: 68px;
+        margin-top: 15px;
     }
     .dashboard_container
     {
@@ -214,15 +225,8 @@
     }
 	.dashboard_container_inner
     {
-        margin-top: 141px;
-    }
-    .main_links ul li:last-of-type
-    {
-        margin-top: 0;
-    }
-    .navbar
-    {
-        padding-bottom: 35px;
+        padding-top: 32px;
+        background-color: var(--white);
     }
     .dashboard_container
     {
