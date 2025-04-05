@@ -746,7 +746,7 @@ form > div:not(:last-of-type)
 }
 .menu .sidebar
 {
-	padding-left: 16px;
+	padding-left: 0px;
 	padding-top: 15px;
 	width: 100%;
 	height: auto;
